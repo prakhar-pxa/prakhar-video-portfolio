@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prakhar Agrahari | Video Editor & Visual Storyteller</title>
+  <meta name="description" content="Portfolio of Prakhar Agrahari, a video editor working on reels, cinematic edits, product and promotional videos.">
+  <!-- Apply saved theme before the page paints (prevents a flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Prakhar Agrahari</a>
+  <nav id="nav" class="nav" aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-tools">
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to dark theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" class="rays"/></svg>
+    </button>
+    <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-role">Video Editor &amp; Visual Storyteller</p>
+    <h1>Prakhar<br>Agrahari</h1>
+    <p class="hero-intro">I cut raw footage into videos people actually finish watching. Reels, product films, promos and longer stories, shaped around pacing, sound and a clear idea.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">View My Work</a>
+      <a class="btn btn-ghost" href="#contact">Let's Work Together</a>
+    </div>
+
+    <!-- Decorative editing timeline -->
+    <div class="timeline" aria-hidden="true">
+      <div class="track"><i style="--w:22%"></i><i style="--w:9%"></i><i style="--w:31%"></i><i style="--w:14%"></i></div>
+      <div class="track"><i style="--w:12%"></i><i style="--w:27%"></i><i style="--w:18%"></i><i style="--w:24%"></i></div>
+      <div class="track"><i style="--w:35%"></i><i style="--w:16%"></i><i style="--w:21%"></i></div>
+      <span class="playhead"></span>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="work" class="section">
+    <div class="section-head">
+      <h2>Selected edits</h2>
+      <p>Press play on any video. Use the filters to see a specific style.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter videos by category">
+      <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="reels" aria-pressed="false">Reels &amp; Short-Form Videos</button>
+      <button type="button" class="chip" data-filter="cinematic" aria-pressed="false">Cinematic Edits</button>
+      <button type="button" class="chip" data-filter="product" aria-pressed="false">Product Videos</button>
+      <button type="button" class="chip" data-filter="promo" aria-pressed="false">Promotional Videos</button>
+      <button type="button" class="chip" data-filter="lifestyle" aria-pressed="false">Lifestyle Videos</button>
+      <button type="button" class="chip" data-filter="other" aria-pressed="false">Other Projects</button>
+    </div>
+    <div id="videoGrid" class="grid" aria-live="polite"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <h2>About</h2>
+    <div class="about-text">
+      <p>I'm Prakhar, a video editor who enjoys working across different styles. One day it's a fast, punchy reel for social media, the next it's a slower cinematic piece or a clean product video.</p>
+      <p>Good editing is mostly invisible. It's the rhythm of the cuts, the way sound supports the picture, and knowing what to leave out. I try to give each project its own pace instead of applying the same look to everything.</p>
+      <p>If you have footage and an idea, I'd like to hear about it.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="section-head">
+      <h2>What I can edit for you</h2>
+    </div>
+    <ul class="services">
+      <li><h3>Reels Editing</h3><p>Short vertical videos with tight pacing, captions and sound that suit Instagram and similar platforms.</p></li>
+      <li><h3>Social Media Content</h3><p>Consistent, ready-to-post videos for brands and creators across formats.</p></li>
+      <li><h3>Cinematic Video Editing</h3><p>Story-led edits with considered color, music and timing.</p></li>
+      <li><h3>Product &amp; Promotional Videos</h3><p>Clear, focused videos that show what a product or offer is about.</p></li>
+      <li><h3>YouTube Video Editing</h3><p>Longer-form edits with clean cuts, structure and polish.</p></li>
+      <li><h3>Custom Video Editing</h3><p>Something that doesn't fit the list? Tell me what you need.</p></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Have a video in mind?</h2>
+    <p>Send me a short note about your project, the kind of video you want and any deadline. I'll reply with how I can help.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" data-email href="mailto:your.email@example.com?subject=Video%20editing%20project">Email Me</a>
+      <a class="btn btn-ghost" data-instagram href="https://www.instagram.com/YOUR_USERNAME" target="_blank" rel="noopener">Message on Instagram</a>
+    </div>
+    <p class="email-line"><a data-email-text data-email href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>Prakhar Agrahari</span>
+  <span>&copy; <span id="year">2026</span> All rights reserved.</span>
+  <a data-instagram href="https://www.instagram.com/YOUR_USERNAME" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
