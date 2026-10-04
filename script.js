@@ -2,8 +2,8 @@
    1. YOUR DETAILS: edit these two lines
    ===================================================== */
 const CONFIG = {
-  instagram: "https://www.instagram.com/YOUR_USERNAME", // paste your Instagram link
-  email: "your.email@example.com"                       // paste your email address
+  instagram: "https://www.instagram.com/prakhar_._10/", // paste your Instagram link
+  email: "prakharagrahari1014@gmail.com"                       // paste your email address
 };
 
 
